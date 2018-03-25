@@ -17,6 +17,10 @@ class PagesController extends Controller
     {
         return view('pages.contact');
     }
+    function about()
+    {
+        return view('pages.about');
+    }
 
     function login()
     {
