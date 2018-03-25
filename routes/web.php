@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index')->name('index');
 
-Auth::routes();
+//Route::get('/about', 'PagesController@about')->name('about');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/contact', 'PagesController@contact')->name('contact');
+//Route::get('/signup', 'PagesController@signup')->name('signup');
+Route::get('/login', 'PagesController@login')->name('login');
+Route::get('/register', 'PagesController@register')->name('register');
+//Route::get('/viewmessage', 'PagesController@viewmessage')->name('viewmessage');
+//Route::post('/contact', 'PagesController@store')->name('contact.store');
+//Route::get('/thanks/{name}', 'PagesController@thanks')->name('thanks');
