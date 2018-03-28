@@ -22,13 +22,6 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
-    function login()
-    {
-        return view('pages.login');
-    }
-    function register()
-    {
-        return view('pages.register');
-    }
+
 
 }
