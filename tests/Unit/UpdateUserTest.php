@@ -2,24 +2,23 @@
 
 namespace Tests\Unit;
 
-use App\User;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+Use App\User;
 
-class InsertUserTest extends TestCase
+class UpdateUserTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testInsertUser()
+    public function testUpdateUser()
     {
-        $user = new User();
-        $user->name = 'Ron';
-        $user->email = 'Ron@gmail.com';
-        $user->password = 'adelaide';
+        $user = User::find(1);
+        $user->name = 'Steve Smith';
+
 
         $this->assertTrue($user->save());
     }

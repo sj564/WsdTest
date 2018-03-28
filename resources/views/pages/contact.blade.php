@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @extends('pages.index')
+@extends('includes.menu')
 
 @section('content')
 
