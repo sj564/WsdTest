@@ -16,11 +16,7 @@ class DeleteCarTest extends TestCase
      */
     public function testDeleteCar()
     {
-        $car = new Car();
-        $car->Make = 'honda';
-        $car->Model = 'r';
-        $car->year = '1900';
-        $car->save();
+        $car = Car::find(1);
         $this->assertTrue($car->delete());
     }
 }
